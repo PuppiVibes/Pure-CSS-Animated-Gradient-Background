@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'lato', 'sans-serif';
+    font-size: 62.5%;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #ffafbd, #ee9ca7 , #ffc3a0, #ffdde1);
+    background-size: 400% 400%;
+    position: relative;
+    animation: animated-gradient-background 5s ease-in-out infinite normal;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(65, 25, 25);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    border: 4px solid black;
+    border-color: rgb(71, 45, 45);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 10rem;
+    transition: color 4s;
+}
+
+h1:hover {
+    color: rgb(209, 94, 94);
+}
+
+@keyframes animated-gradient-background {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
